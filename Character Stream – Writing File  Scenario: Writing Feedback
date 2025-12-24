@@ -1,0 +1,10 @@
+import java.io.FileWriter;
+
+public class FeedbackWrite {
+    public static void main(String[] args) throws Exception {
+        FileWriter fw = new FileWriter("feedback.txt");
+        fw.write("Good teaching");
+        fw.close();
+        System.out.println("Feedback saved");
+    }
+}
