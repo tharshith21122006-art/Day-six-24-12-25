@@ -1,0 +1,25 @@
+ListIterator
+ 
+import java.util.ArrayList;
+import java.util.ListIterator;
+
+public class MusicPlaylist {
+    public static void main(String[] args) {
+        ArrayList<String> songs = new ArrayList<>();
+        songs.add("Song A");
+        songs.add("Song B");
+        songs.add("Song C");
+
+        ListIterator<String> litr = songs.listIterator();
+
+        System.out.println("Forward Play:");
+        while(litr.hasNext()) {
+            System.out.println(litr.next());
+        }
+
+        System.out.println("Backward Play:");
+        while(litr.hasPrevious()) {
+            System.out.println(litr.previous());
+        }
+    }
+}
