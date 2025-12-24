@@ -1,0 +1,13 @@
+import java.util.HashMap;
+
+public class StudentResult {
+    public static void main(String[] args) {
+        HashMap<Integer, String> results = new HashMap<>();
+
+        results.put(101, "Pass");
+        results.put(102, "Fail");
+        results.put(103, "Pass");
+
+        System.out.println("Result of Roll No 101: " + results.get(101));
+    }
+}
