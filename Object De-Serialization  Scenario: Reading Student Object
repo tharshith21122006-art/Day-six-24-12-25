@@ -1,0 +1,12 @@
+import java.io.*;
+
+public class ReadStudent {
+    public static void main(String[] args) throws Exception {
+        ObjectInputStream ois =
+            new ObjectInputStream(new FileInputStream("student.dat"));
+
+        Student s = (Student) ois.readObject();
+        System.out.println(s.id + " " + s.name);
+        ois.close();
+    }
+}
